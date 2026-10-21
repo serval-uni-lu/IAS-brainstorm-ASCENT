@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ASCENT//Workshop 2027//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ascent-2027-04-19@workshop.local
+DTSTAMP:20261021T083414Z
+SEQUENCE:1
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270306
+SUMMARY:ASCENT — Safe and Assured Agentic AI in Critical Systems
+LOCATION:University of Luxembourg — campus and room to be confirmed
+DESCRIPTION:Two-day interdisciplinary workshop. Programme and participation details are provisional. Contact lorenzo.cazzaro@uni.lu.
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR

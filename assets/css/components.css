@@ -1,0 +1,41 @@
+/* BrainGen-inspired participant and outcome cards in ASCENT's visual identity. */
+.participants-title>.eyebrow,.outcomes-title>.eyebrow{font-size:15px;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 12px}
+.participants-title h2,.outcomes-title h2{margin-bottom:14px}
+.participant-filters{gap:10px;margin:28px 0 30px;flex-wrap:wrap}
+.participant-filters button{font-size:16px;padding:9px 16px;border:1px solid #cbd8ea;border-radius:24px;background:#fff;line-height:1.5;min-height:44px}
+.participant-filters button[aria-pressed=true]{background:var(--accent);color:#fff;border-color:var(--accent)}
+.participant-filters button:hover{border-color:var(--accent)}
+.participant-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.participant-card{border:1px solid #d2ddec;border-radius:14px;background:#fff;padding:25px;display:flex;flex-direction:column;gap:11px;min-width:0;transition:transform .18s,border-color .18s,box-shadow .18s}
+.participant-card:hover{transform:translateY(-3px);border-color:#7196cc;box-shadow:0 8px 22px #1733650c}
+.participant-avatar{width:58px;height:58px;border-radius:15px;background:#e8effb;color:var(--accent);display:grid;place-items:center;font-size:21px;font-weight:700;margin-bottom:6px}
+.participant-card[data-group=education] .participant-avatar{background:#e8f2f1;color:#37626c}
+.participant-card[data-group=law] .participant-avatar{background:#fcf0e5;color:#8c562a}
+.participant-card h3{font-size:23px;line-height:1.3;font-weight:600;margin:0;overflow-wrap:anywhere}
+.participant-card .participant-affiliation{font-size:17px;line-height:1.55;color:var(--accent);font-weight:500;margin:0}
+.participant-card .participant-description{font-size:18px;line-height:1.65;color:var(--muted);margin:0 0 8px}
+.participant-card-footer{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:auto;padding-top:12px}
+.participant-badge{font-size:12px;text-transform:uppercase;letter-spacing:.065em;border:1px solid #cdd9e8;border-radius:24px;color:#52667f;padding:4px 10px;line-height:1.5}
+.organiser-badge{border-color:#a6bcdf;color:#174caa;background:#f3f7ff}.keynote-badge{border-color:#e6bc9a;color:#885728;background:#fff8f2}
+.participant-contact{font-size:15px;margin-left:auto;text-decoration:none}.participant-contact span{margin-left:6px}
+.outcome-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:30px}
+.outcome-card{display:flex;flex-direction:column;min-width:0;background:#fff;border:1px solid #d2ddec;border-radius:14px;padding:26px}
+.outcome-card-number{font-size:15px;font-weight:600;letter-spacing:.06em;color:var(--accent);margin-bottom:17px}
+.outcome-card h3{font-size:25px;line-height:1.3;margin-bottom:16px;font-weight:600}
+.outcome-card p{font-size:18px;line-height:1.7;color:var(--muted)}
+.outcome-card .outcome-target{font-size:16px;margin-top:auto;padding-top:22px}
+.outcome-target b{display:block;font-size:13px;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;border-top:1px solid var(--line);padding-top:15px;margin-bottom:7px}
+@media(max-width:1000px){.participant-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.outcome-cards{grid-template-columns:1fr}.outcome-card p{font-size:20px}.outcome-card .outcome-target{font-size:18px;margin-top:0}.outcome-card h3{font-size:26px}}
+@media(max-width:650px){.participant-grid{grid-template-columns:1fr}.participant-card{padding:23px}.participant-card h3{font-size:23px}.participant-card .participant-affiliation{font-size:17px}.participant-card .participant-description{font-size:18px}.participant-filters{gap:9px}.participant-filters button{font-size:15px;padding:8px 13px}.outcome-card{padding:23px}.outcome-card p{font-size:18px}.outcome-card .outcome-target{font-size:17px}.outcome-card h3{font-size:24px}.participants-title>.eyebrow,.outcomes-title>.eyebrow{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.participant-card{transition:none}.participant-card:hover{transform:none}}
+@media print{.participant-card,.outcome-card{break-inside:avoid;box-shadow:none}.participant-filters{display:none}}
+
+.contact-organisers{display:grid;justify-items:start;gap:14px;margin-top:22px}.contact-grid .contact-organisers .button{margin-top:0;line-height:1.6}
+
+/* Institutional credit visible before the workshop title. */
+.programme-credit{display:flex;align-items:center;gap:23px;background:#fff;border-left:4px solid #e38a49;padding:18px 23px;margin-bottom:25px}
+.programme-credit-logo{display:block;flex:0 0 80px;line-height:0}.programme-credit-logo img{display:block;width:80px;height:auto}
+.programme-credit p{font-size:20px;font-weight:600;line-height:1.5;margin:0}.programme-credit p>a{text-decoration-thickness:1px;text-underline-offset:4px}.programme-credit p>a>span{font-size:17px;margin-left:5px}
+.programme-credit .programme-credit-institute{font-size:16px;font-weight:400;color:var(--muted);margin-top:5px}
+@media(max-width:650px){.programme-credit{gap:17px;padding:16px;margin-bottom:22px}.programme-credit-logo{flex-basis:62px}.programme-credit-logo img{width:62px}.programme-credit p{font-size:18px}.programme-credit .programme-credit-institute{font-size:14px}}
+@media(max-width:380px){.programme-credit{align-items:flex-start;gap:13px;padding:14px}.programme-credit-logo{flex-basis:48px}.programme-credit-logo img{width:48px}.programme-credit p{font-size:17px}.programme-credit .programme-credit-institute{font-size:13px}}
